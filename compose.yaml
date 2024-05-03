@@ -1,0 +1,38 @@
+services:
+  app:
+    image: 'tiem-gom-nha-la:latest'
+    build:
+      context: .
+    container_name: tiem-gom-nha-la
+    depends_on:
+      - postgres
+      - mongodb
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=123456
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/tiemgomnhala
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=123456
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    ports:
+      - '8080:8080'
+
+  mongodb:
+    image: 'mongo:latest'
+    container_name: mongodb
+    environment:
+      - MONGO_INITDB_DATABASE=tiem-gom-nha-la
+      - MONGO_INITDB_ROOT_PASSWORD=123456
+      - MONGO_INITDB_ROOT_USERNAME=root
+    restart: always
+    ports:
+      - '27017:27017'
+  postgres:
+    image: 'postgres:latest'
+    container_name: postgres
+    environment:
+      - POSTGRES_DB=tiemgomnhala
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_USER=postgres
+    ports:
+        - '5432:5432'
