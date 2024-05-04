@@ -1,4 +1,4 @@
-//package com.fpt.tiemgomnhala;
+//package com.example.tiemgomnhala;
 //
 //import org.junit.jupiter.api.Test;
 //import org.springframework.boot.test.context.SpringBootTest;

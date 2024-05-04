@@ -10,6 +10,8 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=123456
+      - MONGO_INITDB_ROOT_PASSWORD=123456
+      - MONGO_INITDB_ROOT_USERNAME=root
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/tiemgomnhala
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=123456
@@ -27,6 +29,7 @@ services:
     restart: always
     ports:
       - '27017:27017'
+
   postgres:
     image: 'postgres:latest'
     container_name: postgres
