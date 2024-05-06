@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Table(name = "wishlist")
 @Getter
@@ -11,5 +13,10 @@ import lombok.Setter;
 public class Wishlist {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    private String wishlistId;
+
+    @OneToMany
+    private List<Product> wishlist;
+
+
 }

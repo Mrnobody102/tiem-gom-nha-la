@@ -11,5 +11,5 @@ import lombok.Setter;
 public class OrderDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    private String orderDetailId;
 }

@@ -12,7 +12,7 @@ import lombok.Setter;
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    private String categoryId;
 
     @Column(name = "name")
     private String name;

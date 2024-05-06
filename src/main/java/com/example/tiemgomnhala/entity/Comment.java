@@ -11,6 +11,6 @@ import lombok.Setter;
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    private String commentId;
 
 }

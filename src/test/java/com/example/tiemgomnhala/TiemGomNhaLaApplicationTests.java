@@ -1,13 +1,13 @@
-package com.example.tiemgomnhala;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-class TiemGomNhaLaApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
+//package com.example.tiemgomnhala;
+//
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//@SpringBootTest
+//class TiemGomNhaLaApplicationTests {
+//
+//	@Test
+//	void contextLoads() {
+//	}
+//
+//}

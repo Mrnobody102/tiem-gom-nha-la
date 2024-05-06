@@ -11,5 +11,5 @@ import lombok.Setter;
 public class Rating {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    private String ratingId;
 }
