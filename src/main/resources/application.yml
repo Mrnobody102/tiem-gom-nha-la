@@ -4,8 +4,7 @@
 #      client:
 #        registration:
 #          google:
-#            client-id: 523432906711-3rs3acojuvt4k07jul2dql7oate28qof.apps.googleusercontent.com
-#            client-secret: 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
+
 #            scope:
 #              - email
 #              - profile
